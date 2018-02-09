@@ -1,0 +1,73 @@
+<html style='height:100%'>
+<head>
+	<title>ERA wallet</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="./css/common.css">
+	<script src="./lib/common.js"></script>
+</head>
+
+<body onload="onFirstLoad()">
+	<div id="topMenu">
+		<div class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="http://erachain.org" target='_blank'>ERAchain</a>
+			<div class="collapse navbar-collapse" id="containerNavbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active"><a class="nav-link" href="#">WebWallet</a></li>
+					<li class="nav-item"><a class="nav-link" id="blockExplorer" target='_blank'>BlockExplorer</a></li>
+				</ul>	 	
+				<button id="logButton" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="logAction()">Log in</button>
+			</div>
+		</div>
+	</div>
+	<div id="workFlowMainContainer" class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3">
+				<div id="workFlowMenu" style="padding:10px; min-width: 300px;">
+					<div class="well">
+						<h5 class="text-muted">Account</h5>
+						<ol class="list-unstyled">
+							<li><div id="accountSeed" class="text-success" style="font-size: small">not set</div></li>
+							<li><div id="compuBalance" class="text-success" style="font-size: small">&nbsp;</div></li>
+						</ol>
+						<h5 class="text-muted">Asset</h5>
+						<ol class="list-unstyled">
+							<li><a href=# onclick="menuClick('issueAsset')">Issue Asset</a></li>
+							<li><a href=# onclick="menuClick('sendAsset')">Send Asset</a></li>
+						</ol>
+						<h5 class="text-muted">Person</h5>
+						<ol class="list-unstyled">
+							<li><a href=# onclick="menuClick('generatePerson')">Generate Person</a></li>
+							<li><a href=# onclick="menuClick('enterPerson')">Enter Person</a></li>
+							<li><a href=# onclick="menuClick('certPerson')">Certify Person</a></li>
+						</ol>
+						<!--<h5 class="text-muted">Status</h5>
+						<ol class="list-unstyled">
+							<li><a href=statusissue.html>Issue Status</a> </li>
+							<li><a href=statusset.html>Set Status</a> </li>
+						</ol>
+						<h5 class="text-muted">Exchange</h5>
+						<ol class="list-unstyled">
+							<li><a href=ordercreate.html>Create Order</a></li>
+							<li><a href=orderdelete.html>Delete Order</a></li>
+						</ol> -->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9">
+				<div class="thumbnail" style="padding:20px;">
+					<div class="caption">
+					<div id="workFlowMainFrame" class="container">
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+</body>

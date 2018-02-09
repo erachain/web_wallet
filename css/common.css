@@ -1,0 +1,99 @@
+.nowrap {
+white-spaceЙ: pre-wrap
+}
+.cropit-preview {
+    background-color: #f8f8f8;
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 7px;
+    width: 250px;
+    height: 335px;
+  }
+
+  .cropit-preview-image-container {
+    cursor: move;
+  }
+
+  .image-size-label {
+    margin-top: 10px;
+  }
+
+  input {
+    display: block;
+  }
+
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+
+  #result {
+    margin-top: 10px;
+    width: 900px;
+  }
+
+  #result-data {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+  }
+
+  input[type=range] {
+    -webkit-appearance: none;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: #ddd;
+    margin: 10px;
+    border: none;
+    border-radius: 3px;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(83, 83, 83);
+    margin-top: -4px;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+input[type=range]::-moz-range-track {
+  width: 150px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: rgb(83, 83, 83);
+}
+
+input[type=range]:-moz-focusring{
+  outline: 1px solid white;
+  outline-offset: -1px;
+}
