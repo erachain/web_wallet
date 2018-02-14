@@ -27,11 +27,6 @@
     margin-top: 10px;
   }
 
-  #result {
-    margin-top: 10px;
-    width: 900px;
-  }
-
   #result-data {
     display: block;
     overflow: hidden;
@@ -49,7 +44,7 @@
   }
   
   input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
+    width: 250px;
     height: 5px;
     background: #ddd;
     margin: 10px;
@@ -78,7 +73,7 @@ input[type=range]::-ms-fill-upper {
 }
 
 input[type=range]::-moz-range-track {
-  width: 150px;
+  width: 250px;
   height: 5px;
   background: #ddd;
   border: none;
