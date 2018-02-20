@@ -1,6 +1,6 @@
 # ERAchainWEBwallet
-По умолчанию используется узел для разработчиков http://explorer.erachain.org:9067
-Публичный узел ERA chain http://explorer.erachain.org:9047
+По умолчанию используется публичный узел http://explorer.erachain.org:9047
+Узел для разработчиков ERA chain http://explorer.erachain.org:9067
 
 библиотека функций обеспечивающих выполнений базовых функций ERA chain на JavaScript ./lib/eralib.js (формирование, подписание и отправление в блокчейн транзакций)
 
