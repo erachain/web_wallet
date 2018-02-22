@@ -1,7 +1,7 @@
 <html style='height:100%'>
 <head>
-	<title>ERA wallet</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<title>Erachain wallet</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/common.css">
 	<script src="./lib/common.js"></script>	
 	<script src="./lib/jquery-3.1.1.min.js"></script> 
@@ -13,20 +13,23 @@
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<a class="navbar-brand" href="http://erachain.org" target='_blank'>ERAchain</a>
+			<a class="navbar-brand" href="http://erachain.org" target='_blank'><img src=./img/logo.png width=145 height=30></a>
 			<div class="collapse navbar-collapse" id="containerNavbar">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active"><a class="nav-link" href="#">WebWallet</a></li>
-					<li class="nav-item"><a class="nav-link" id="blockExplorer" target='_blank'>BlockExplorer</a></li>
+					<li class="nav-item"></li>
 				</ul>	 	
+				<a class="nav-link" id="blockExplorer" target='_blank'>BlockExplorer</a>
+				<div style='margin-right:40px;'></div>
 				<button id="logButton" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="logAction()">Log in</button>
 			</div>
 		</div>
 	</div>
-	<div id="workFlowMainContainer" class="container-fluid">
-		<div class="row">
-			<div class="col-sm-3">
-				<div id="workFlowMenu" style="padding:10px; min-width: 300px;">
+<div id="workFlowMainContainer" class="container-fluid">
+	<table class='table'>
+		<tbody>
+		<tr>
+			<td>
+				<div id="workFlowMenu" style="padding:10px; min-width: 150px;">
 					<div class="well">
 						<h5 class="text-muted">Account</h5>
 						<ol class="list-unstyled">
@@ -35,6 +38,7 @@
 						</ol>
 						<h5 class="text-muted">Asset</h5>
 						<ol class="list-unstyled">
+							<li><a href=# onclick="menuClick('balances')">Balances</a></li>
 							<li><a href=# onclick="menuClick('issueAsset')">Issue Asset</a></li>
 							<li><a href=# onclick="menuClick('sendAsset')">Send Asset</a></li>
 						</ol>
@@ -56,17 +60,18 @@
 						</ol> 
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-9">
+			</td>
+			<td>
 				<div class="thumbnail" style="padding:20px;">
 					<div class="caption">
 					<div id="workFlowMainFrame" class="container">
 					</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
+			</td>
+		</tr>
+		</tbody>
+	</table>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script src="./lib/jquery.cropit.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
