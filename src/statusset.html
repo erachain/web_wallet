@@ -99,10 +99,10 @@
 		var date_End = dataE.getTime();
 		var value1 = $('#value1').val(); //3;
 		var value2 = $('#value2').val(); //1;
-		var string1 =$('#string1').val(); //"Проверочный статус";
-		var string2 =$('#string2').val(); //"настоящего договора";
+		var string1 =$('#string1').val(); //"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ";
+		var string2 =$('#string2').val(); //"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ";
 		var refToParent =0;
-		var port = $("#port").val();
+		var port = appData.getUrlPort();
 	
 	$("#txRaw").val(Base58.encode(R_SetStatusToItem(keyPair, timestamp, status_Key, item_Type, item_Key, date_Start, date_End, value1, value2, string1, string2, refToParent, description, port)));
 	$("#myLink").html('<a href="' + $("#nodeUrl").val() + '/api/broadcast/' + $("#txRaw").val() +'">' + $("#nodeUrl").val() + '/api/broadcast/' + $("#txRaw").val() +'</a>');
