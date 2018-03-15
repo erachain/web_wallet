@@ -94,3 +94,7 @@ input[type=range]:-moz-focusring{
   outline: 1px solid white;
   outline-offset: -1px;
 }
+
+.CodeMirror {
+	max-height: 150px;
+}

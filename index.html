@@ -3,13 +3,15 @@
 	<title>Erachain wallet</title>
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/common.css">
-	<script src="./lib/common.js"></script>	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
 	<script src="./lib/jquery-3.1.1.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+	<script src="./lib/common.js"></script>	
 </head>
 
 <body onload="onFirstLoad()">
 	<div id="topMenu">
-		<div class="navbar navbar-light bg-faded rounded navbar-toggleable-md">
+		<div class="navbar navbar-light bg-faded rounded navbar-toggleable-sm">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -24,11 +26,10 @@
 			</div>
 		</div>
 	</div>
-<div id="workFlowMainContainer" class="container-fluid">
-	<div class='container'>
+	<div class='container-fluid'>
 		<div class='row'>
-			<div class='col-2' style='max-width: 180px;'>
-				<div id="workFlowMenu" style="padding:10px;">
+			<div class='col-sm-2'>
+				<div id="workFlowMenu" style="min-width:200px; padding-left:50px; padding-top:20px;">
 					<div class="well">
 						<h5 class="text-muted">Account</h5>
 						<ol class="list-unstyled">
@@ -51,7 +52,11 @@
 						<ol class="list-unstyled">
 							<li><a href=# onclick="menuClick('orderCreate')">Create Order</a></li>
 							<li><a href=# onclick="menuClick('orderDelete')">Delete Order</a></li>
-						</ol> 
+						</ol>
+						<h5 class="text-muted">Documents</h5>
+						<ol class="list-unstyled">
+							<li><a href=# onclick="menuClick('hashIssue')">Issue Hash</a></li>
+						</ol>  
 						<h5 class="text-muted">Status</h5>
 						<ol class="list-unstyled">
 							<li><a href=# onclick="menuClick('issueStatus')">Issue Status</a></li>
@@ -60,47 +65,18 @@
 					</div>
 				</div>
 			</div>
-			<div class='col-10'>
-				<div class="thumbnail" style="padding-top:20px;">
+			<div class='col-sm-10'>
+				<div class="thumbnail" style="padding-top:20px; padding-left:70px;">
 					<div class="caption">
-					<div id="workFlowMainFrame" class="container">
-					</div>
+						<div id="workFlowMainFrame" class="container">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 	<script src="./lib/jquery.cropit.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-	<!-- Yandex.Metrika counter -->
-	<script type="text/javascript" >
-    	(function (d, w, c) {
-        	(w[c] = w[c] || []).push(function() {
-            	try {
-                	w.yaCounter47835297 = new Ya.Metrika({
-                    id:47835297,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true
-                	});
-            	} catch(e) { }
-        	});
-
-        	var n = d.getElementsByTagName("script")[0],
-            	s = d.createElement("script"),
-            	f = function () { n.parentNode.insertBefore(s, n); };
-        	s.type = "text/javascript";
-        	s.async = true;
-        	s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-        	if (w.opera == "[object Opera]") {
-            	d.addEventListener("DOMContentLoaded", f, false);
-        	} else { f(); }
-    	})(document, window, "yandex_metrika_callbacks");
-	</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/47835297" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </body>
