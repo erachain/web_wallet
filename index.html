@@ -3,13 +3,17 @@
 	<title>Erachain wallet</title>
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/common.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+	<script src="./lib/ckeditor/ckeditor.js"></script>
 	<script src="./lib/jquery-3.1.1.min.js"></script> 
-	<script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
 	<script src="./lib/common.js"></script>	
 </head>
 
 <body onload="onFirstLoad()">
+	<div id="backgroundLoader"></div>
+	<div id="loaderWrapper">
+		<div class=loader></div>
+		loading...
+	</div>
 	<div id="topMenu">
 		<div class="navbar navbar-light bg-faded rounded navbar-toggleable-sm">
 			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">

@@ -95,6 +95,46 @@ input[type=range]:-moz-focusring{
   outline-offset: -1px;
 }
 
-.CodeMirror {
-	max-height: 150px;
+.loader {
+  z-index: 900;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  border-top: 4px solid #ec036e;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#loaderWrapper {
+  position: fixed;
+  z-index: 900;
+  height: 90px;
+  width: 90px;
+  top: 50%;
+  left: 50%;
+  margin:0 auto;
+  margin-left: -45px;
+  margin-top: -45px;
+}
+
+#backgroundLoader {
+  width: 100%;
+  height: 100%;
+  z-index: 800;
+  background: #fff;
+  opacity: 0.4;
+  margin:0 auto;
+  position: fixed;
 }
