@@ -1,0 +1,8 @@
+{
+    "name": "ErachainWallet",
+    "version": "0.0.1",
+    "main": "index.html",
+    "dependencies": {
+        "nw": "^0.29.1"
+    }
+}
