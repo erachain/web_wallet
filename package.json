@@ -1,8 +1,31 @@
 {
+    "app_name": "ErachainWallet",
+    "main": "index.html",
     "name": "ErachainWallet",
     "version": "0.0.1",
-    "main": "index.html",
-    "dependencies": {
-        "nw": "^0.29.1"
+    "webexe_settings": {
+        "blacklist": "",
+        "custom_script": "",
+        "download_dir": "",
+        "export_dir": "output",
+        "force_download": false,
+        "linux-x64": true,
+        "mac-x64": true,
+        "nw_compression_level": 0,
+        "nw_version": "0.29.1",
+        "output_pattern": "",
+        "sdk_build": false,
+        "uncompressed_folder": false,
+        "whitelist": "",
+        "windows-x64": true
+    },
+    "webkit": {},
+    "window": {
+        "exe_icon": "favicon.png",
+        "height": 600,
+        "icon": "favicon.png",
+        "id": "ERAchainWEBwallet",
+        "title": "Erachain Wallet",
+        "width": 1024
     }
 }
