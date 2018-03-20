@@ -2,7 +2,7 @@
 По умолчанию используется публичный узел http://explorer.erachain.org:9047
 Узел для разработчиков ERA chain http://explorer.erachain.org:9067
 
-Desktop wallet version: https://github.com/aufklaerer/ERAchainWEBwallet/blob/master/desktop-ver/windows-x64.zip
+Desktop wallet version: https://github.com/aufklaerer/ERAchainWEBwallet/tree/master/desktop-ver
 
 библиотека функций обеспечивающих выполнений базовых функций ERA chain на JavaScript ./lib/eralib.js (формирование, подписание и отправление в блокчейн транзакций)
 
