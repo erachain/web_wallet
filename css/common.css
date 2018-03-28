@@ -129,16 +129,6 @@ input[type=range]:-moz-focusring{
   margin-top: -45px;
 }
 
-#infoWrapper {
-  position: fixed;
-  z-index: 1000;
-  width: 600px;
-  left: 50%;
-  margin:0 auto;
-  margin-left: -300px;
-  margin-top: 50px;
-}
-
 #backgroundLoader {
   width: 100%;
   height: 100%;
