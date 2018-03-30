@@ -44,14 +44,17 @@
 			<div class='col-sm-2 bd-sidebar'>
 				<div id="workFlowMenu" style="min-width:200px; padding-left:50px; padding-top:20px;">
 					<div class="well">
-						<h5 class="text-muted">Account</h5>
 						<ol class="list-unstyled">
 							<li><div id="accountSeed" class="text-success" style="font-size: small">not set</div></li>
-							<li><div id="compuBalance" class="text-success" style="font-size: small">&nbsp;</div></li>
+							<li><div id="compuBalance" class="text-success" style="font-size: small">&nbsp;</div></li> 
+						</ol>
+						<h5 class="text-muted">Account</h5>
+						<ol class="list-unstyled">
+							<li><a href=# onclick="menuClick('balances')">Balances</a></li>	
+							<li><a href=# onclick="menuClick('transactions')">Transactions</a></li>
 						</ol>
 						<h5 class="text-muted">Assets</h5>
 						<ol class="list-unstyled">
-							<li><a href=# onclick="menuClick('balances')">Balances</a></li>
 							<li><a href=# onclick="menuClick('issueAsset')">Issue Asset</a></li>
 							<li><a href=# onclick="menuClick('sendAsset')">Send Asset</a></li>
 							<li><a href=# onclick="menuClick('searchAsset')">Search Asset</a></li>
