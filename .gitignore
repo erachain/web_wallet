@@ -1,3 +1,9 @@
 node_modules
 output
 web2exe.json
+.idea/ERAchainWEBwallet.iml
+.gitignore
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
