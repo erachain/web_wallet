@@ -142,3 +142,16 @@ input[type=range]:-moz-focusring{
 .CodeMirror {
 	height: 130px;
 }
+.server-list__table {
+  margin-top: 10px;
+}
+.server-list__table * {
+  font-size: 12px;
+}
+.server-list__table td {
+  vertical-align: top;
+}
+table.server-list__table>tbody>tr>td {
+  padding: 20px;
+  background-color: #f3f3f3;
+}
