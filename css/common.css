@@ -155,3 +155,70 @@ table.server-list__table>tbody>tr>td {
   padding: 20px;
   background-color: #f3f3f3;
 }
+
+.guard-crypto {
+  width: 9px;
+  height: auto;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.panel-message {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel-message__encrypted {
+  position: relative;
+}
+
+.checkbox {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+
+.checkbox + label {
+  cursor: pointer;
+}
+
+.checkbox:not(checked) {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.checkbox:not(checked) + label {
+  position: relative;
+  padding: 0 50px 0 0;
+  margin: 0;
+}
+.checkbox:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 0;
+  width: 40px;
+  height: 20px;
+  border-radius: 10px;
+  background: #CDD1DA;
+  transition: .2s;
+}
+.checkbox:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 22px;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background: #FFF;
+  transition: .2s;
+}
+.checkbox:checked + label:before {
+  background: #9FD468;
+}
+.checkbox:checked + label:after {
+  right: 2px;
+}
