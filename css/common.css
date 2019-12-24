@@ -40,11 +40,11 @@
   input[type=range] {
     -webkit-appearance: none;
   }
-  
+
   input[type=range]:focus {
     outline: none;
   }
-  
+
   input[type=range]::-webkit-slider-runnable-track {
     width: 250px;
     height: 5px;
@@ -221,4 +221,42 @@ table.server-list__table>tbody>tr>td {
 }
 .checkbox:checked + label:after {
   right: 2px;
+}
+.button__mail {
+  display: inline-block;
+  color: white;
+  background-color: #ec036e;
+  padding: 5px 15px;
+  transition: .5s;
+}
+.button__mail:hover, .button__mail:active, .button__mail:visited, .button__mail:link {
+  text-decoration: none;
+  color: white;
+}
+.button__mail:hover {
+  background-color: #b61875;
+}
+.link__back {
+  color: #ec036e;
+}
+.link__back:hover, .link__back:active, .link__back:visited, .link__back:link {
+  text-decoration: none;
+  color: #b61875;
+}
+.mail-table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.mail-table td {
+  padding: 10px;
+  background-color: #f8f8f8;
+}
+.mail-table tr:nth-child(2n) td {
+  background-color: #f3f3f3;
+}
+.mail-table tr td:nth-child(1), .mail-table tr td:nth-child(4) {
+  font-weight: bold;
+}
+.message__encrypted {
+  color: red;
 }
