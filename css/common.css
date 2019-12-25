@@ -247,9 +247,10 @@ table.server-list__table>tbody>tr>td {
   width: 100%;
   margin-bottom: 10px;
 }
-.mail-table td {
+.mail-table td, .mail-table th {
   padding: 10px;
   background-color: #f8f8f8;
+  vertical-align: top;
 }
 .mail-table tr:nth-child(2n) td {
   background-color: #f3f3f3;
@@ -257,6 +258,29 @@ table.server-list__table>tbody>tr>td {
 .mail-table tr td:nth-child(1), .mail-table tr td:nth-child(4) {
   font-weight: bold;
 }
+#personExtendedInfo {
+  margin-top: 10px;
+}
+#personExtendedInfo .mail-table th {
+  background-color: #e4e4e4;
+}
+#personExtendedInfo p {
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+#personExtendedInfo .mail-table tr td:nth-child(1), #personExtendedInfo .mail-table tr td:nth-child(4) {
+  font-weight: normal;
+}
 .message__encrypted {
   color: red;
+}
+.person-table-info {
+  margin-top: 12px;
+}
+.person-balances {
+  font-size: 20px;
+  padding: 10px;
+}
+.person-balances p {
+  margin-bottom: 0;
 }
