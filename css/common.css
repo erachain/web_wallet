@@ -124,9 +124,7 @@ input[type=range]:-moz-focusring{
   width: 90px;
   top: 50%;
   left: 50%;
-  margin:0 auto;
-  margin-left: -45px;
-  margin-top: -45px;
+  margin:-45px 0 0 -45px;
 }
 
 #backgroundLoader {
@@ -283,4 +281,18 @@ table.server-list__table>tbody>tr>td {
 }
 .person-balances p {
   margin-bottom: 0;
+}
+.table__orderbook img {
+  max-height: 20px;
+  width: auto;
+  margin: -3px 5px 0 0;
+}
+.table__orderbook th, .table__orderbook td {
+  text-align: center;
+}
+.table__orderbook .text-danger {
+   background-color: #ffeaea;
+}
+.table__orderbook .text-info {
+   background-color: #e3f7fd;
 }
