@@ -296,3 +296,9 @@ table.server-list__table>tbody>tr>td {
 .table__orderbook .text-info {
    background-color: #e3f7fd;
 }
+.transaction-preview {
+  margin: 20px 0 40px;
+}
+.transaction-preview__table th {
+  background-color: #d2d2d2;
+}
