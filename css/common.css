@@ -302,3 +302,10 @@ table.server-list__table>tbody>tr>td {
 .transaction-preview__table th {
   background-color: #d2d2d2;
 }
+.forging-checkbox {
+  display: flex;
+  align-items: center;
+}
+.forging-checkbox label {
+  margin: 0 0 0 5px;
+}
