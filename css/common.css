@@ -302,6 +302,14 @@ table.server-list__table>tbody>tr>td {
 .transaction-preview__table th {
   background-color: #d2d2d2;
 }
+.transaction-preview__vouches b {
+  font-weight: normal;
+}
+.transaction-preview__vouches center {
+  text-align: left;
+  font-weight: bold;
+  margin: 10px 0;
+}
 .forging-checkbox {
   display: flex;
   align-items: center;
